@@ -14,22 +14,17 @@
     --font-destaque:'Lexend Deca';
 }
 body{
-    background-color:var(--bg-color-main)  ;
+     background-color:var(--bg-color-main) ;
+     min-height: 100vh;
+     display: flex; 
+     flex-direction: column; 
+     justify-content: center; 
+     align-items: center; 
 }
 .main-container{
-    max-width:100%;
-    max-height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
+    max-width:375px;
 }
-.card-container{
-    margin-top:10%;
-    max-width:400px;
-    max-height:100%;
-}
+
 img{
     height:100%;
     width: 100%;
@@ -61,11 +56,15 @@ p{
 }
 h1{
     font-size: 1.5rem;
-}
-h1, h3{
     color: var(--white);
     font-family: var(--font-principal);
     padding-bottom: 1rem;
+}
+.number{
+    font-family: var(--font-principal);
+    color: var(--white);
+    font-size:1.3rem;
+    font-weight: bolder;
 }
 strong{
     color: var(--color-image);
@@ -90,15 +89,10 @@ body{
     background-color:var(--bg-color-main) ;
 }
 .main-container{
-    flex-direction: row;
-    
-}
-.card-container{
-    max-width:750px;
     display: flex;
     flex-direction: row-reverse;
-
-}
+    max-width:750px;
+}   
 .card-image{
     max-width:50%;
     max-height:600px;
